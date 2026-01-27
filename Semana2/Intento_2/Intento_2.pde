@@ -18,7 +18,7 @@ size(1000,1000);
 //background(0);
 //background(#BF5353);
 background(colorFondo);
-print("HoLa");
+print("Hola");
 
 
 //circulos fondo, descubrí que el cuarto num en stroke es opacidad
