@@ -1,15 +1,31 @@
+// variables
+color colorFondo = color(6,10,22);
+
+color colorCirculo1 = color(110,180,255);
+color colorCirculo2 = color(255,220,170);
+
+color colorEstrella1 = color(255,255,255);
+color colorEstrella2 = color(255,240,200);
+
+color colorLinea1 = color(120,220,255);
+color colorNodo1  = color(255,255,255);
+
+int grosor1 = 1;
+int grosor2 = 2;
+int grosor3 = 3;
+int grosor4 = 4;
 size(1000,1000);
 //background(0);
 //background(#BF5353);
-background(6,10,22);
+background(colorFondo);
 print("HoLa");
 
 
 //circulos fondo, descubrí que el cuarto num en stroke es opacidad
 stroke(0,0,0,0);
-strokeWeight(1);
+strokeWeight(grosor1);
 
-fill(110,180,255,18);
+fill(colorCirculo1, 18);
 circle(120,820,520);
 circle(220,740,520);
 circle(320,660,520);
@@ -20,7 +36,7 @@ circle(720,340,520);
 circle(820,260,520);
 circle(920,180,520);
 
-fill(255,220,170,14);
+fill(colorCirculo2, 14);
 circle(170,790,420);
 circle(270,710,420);
 circle(370,630,420);
@@ -31,9 +47,9 @@ circle(770,310,420);
 circle(870,230,420);
 
 // estrellas fondo
-stroke(255,255,255,140);
-fill(255,255,255,140);
-strokeWeight(2);
+stroke(colorEstrella1, 140);
+fill(colorEstrella1, 140);
+strokeWeight(grosor2);
 
 circle(80,140,6);
 circle(140,260,5);
@@ -63,25 +79,25 @@ circle(680,920,4);
 circle(820,900,5);
 circle(940,860,6);
 
-stroke(255,240,200,170);
-fill(255,240,200,170);
-strokeWeight(3);
+stroke(colorEstrella2, 170);
+fill(colorEstrella2, 170);
+strokeWeight(grosor3);
 circle(260,660,10);
 circle(520,500,12);
 circle(740,340,10);
 circle(620,720,9);
 
 // constelación
-stroke(120,220,255,180);
-strokeWeight(4);
+stroke(colorLinea1, 180);
+strokeWeight(grosor4);
 line(300,650,420,610);
 line(420,610,520,520);
 line(520,520,640,470);
 line(640,470,740,340);
 
-stroke(255,255,255,220);
-fill(255,255,255,220);
-strokeWeight(2);
+stroke(colorNodo1, 220);
+fill(colorNodo1, 220);
+strokeWeight(grosor2);
 circle(300,650,12);
 circle(420,610,10);
 circle(520,520,14);
